@@ -1,0 +1,112 @@
+.mylist {
+  min-height: 100vh;
+  background-color: #111;
+  color: white;
+  padding-bottom: 50px;
+}
+
+.mylist__container {
+  padding: 100px 30px 20px;
+}
+
+.mylist__container h2 {
+  font-size: 2vw;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.mylist__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.mylist__item {
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.mylist__item:hover {
+  transform: scale(1.05);
+  z-index: 10;
+}
+
+.mylist__poster {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+.mylist__item__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.2s;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px;
+}
+
+.mylist__item:hover .mylist__item__overlay {
+  opacity: 1;
+}
+
+.mylist__item__title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.mylist__removeBtn {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+.mylist__removeBtn:hover {
+  background: white;
+  color: black;
+}
+
+.mylist__empty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+}
+
+.mylist__empty h3 {
+  color: #737373;
+  margin-bottom: 20px;
+}
+
+.mylist__empty button {
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.mylist__empty button:hover {
+  background-color: rgba(255, 255, 255, 0.75);
+}
