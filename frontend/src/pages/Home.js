@@ -9,7 +9,7 @@ function Home() {
       <Navbar />
       <Banner />
       <Row 
-        title="NETFLIX ORIGINALS" 
+        title="STREAMFLIX ORIGINALS" 
         fetchUrl="/api/movies?category=netflixOriginals" 
         isLargeRow 
       />

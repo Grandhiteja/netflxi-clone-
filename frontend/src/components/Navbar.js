@@ -29,13 +29,12 @@ function Navbar() {
   return (
     <div className={`nav ${show && "nav__black"}`}>
       <div className="nav__left">
-        <img
+        <h1
           onClick={() => navigate("/")}
-          className="nav__logo"
-          style={{ cursor: "pointer" }}
-          src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
-          alt="Netflix Logo"
-        />
+          className="nav__logoText"
+        >
+          STREAMFLIX
+        </h1>
         <div className="nav__links">
           <span onClick={() => navigate("/")}>Home</span>
           <span onClick={() => navigate("/mylist")}>My List</span>
@@ -55,8 +54,8 @@ function Navbar() {
           onClick={() => auth.signOut()}
           className="nav__avatar"
           style={{ cursor: "pointer" }}
-          src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"
-          alt="Netflix Avatar"
+          src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&q=80&w=100"
+          alt="User Avatar"
         />
       </div>
     </div>

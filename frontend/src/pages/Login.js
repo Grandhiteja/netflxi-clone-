@@ -33,11 +33,9 @@ function Login() {
   return (
     <div className="login">
       <div className="login__background">
-        <img
-          className="login__logo"
-          src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
-          alt="Netflix Logo"
-        />
+        <h1 className="login__logoText" onClick={() => navigate("/")}>
+          STREAMFLIX
+        </h1>
         <div className="login__gradient" />
       </div>
 
@@ -63,7 +61,7 @@ function Login() {
             
             <h4>
               <span className="login__gray">
-                {isSignUp ? 'Already have an account? ' : 'New to Netflix? '}
+                {isSignUp ? 'Already have an account? ' : 'New to StreamFlix? '}
               </span>
               <span className="login__link" onClick={() => setIsSignUp(!isSignUp)}>
                 {isSignUp ? 'Sign in now.' : 'Sign up now.'}

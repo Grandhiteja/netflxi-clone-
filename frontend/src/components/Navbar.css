@@ -16,9 +16,20 @@
   background-color: #111;
 }
 
-.nav__logo {
-  width: 80px;
-  object-fit: contain;
+.nav__logoText {
+  color: #e50914;
+  font-size: 1.6rem;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-family: 'Outfit', 'Inter', 'Helvetica Neue', sans-serif;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  margin: 0;
+}
+
+.nav__logoText:hover {
+  transform: scale(1.05);
 }
 
 .nav__left {
