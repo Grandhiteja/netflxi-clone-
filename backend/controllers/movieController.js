@@ -4,7 +4,7 @@ const TMDB_API_KEY = process.env.TMDB_API_KEY;
 const TMDB_BASE_URL = 'https://api.tmdb.org/3';
 
 const requests = {
-  netflixOriginals: `/discover/tv?api_key=${TMDB_API_KEY}&with_networks=213`,
+  streamflixOriginals: `/discover/tv?api_key=${TMDB_API_KEY}&with_networks=213`,
   trending: `/trending/all/week?api_key=${TMDB_API_KEY}&language=en-US`,
   topRated: `/movie/top_rated?api_key=${TMDB_API_KEY}&language=en-US`,
   action: `/discover/movie?api_key=${TMDB_API_KEY}&with_genres=28`,
@@ -23,7 +23,7 @@ const getMovies = async (req, res) => {
   const category = req.query.category || 'trending';
   
   let fetchUrl = requests.trending;
-  if(category === 'netflixOriginals') fetchUrl = requests.netflixOriginals;
+  if(category === 'streamflixOriginals') fetchUrl = requests.streamflixOriginals;
   if(category === 'top-rated') fetchUrl = requests.topRated;
   if(category === 'action') fetchUrl = requests.action;
   if(category === 'comedy') fetchUrl = requests.comedy;

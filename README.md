@@ -1,13 +1,13 @@
-# 🎬 Fullstack Netflix Clone
+# 🎬 StreamFlix - Unlimited Movies & TV Shows
 
-A premium, full-featured Netflix Clone built with React, Node.js/Express, Sequelize (SQLite), and Firebase Authentication. This project replicates the Netflix browsing experience, including dynamically fetched movie rows, trailer popups, user authentication, and persistent personalized watchlists.
+A premium, full-featured streaming web application built with React, Node.js/Express, Sequelize (SQLite), and Firebase Authentication. This project replicates a modern media browsing experience, including dynamically fetched movie rows, trailer popups, user authentication, and persistent personalized watchlists.
 
 ---
 
 ## 🚀 Features
 
 - **Dynamic Hero Banner**: Showcases popular trending movies with a description and action buttons.
-- **Categorized Movie Rows**: Powered by **TMDB API** (Trending, Netflix Originals, Top Rated, Action, Comedy, Horror, Romance, Documentaries, and more).
+- **Categorized Movie Rows**: Powered by **TMDB API** (Trending, StreamFlix Originals, Top Rated, Action, Comedy, Horror, Romance, Documentaries, and more).
 - **Trailer Playback**: Clicking on any movie poster fetches and plays its YouTube trailer dynamically.
 - **Firebase Authentication**: Secure user sign-up and login capabilities.
 - **Personalized Watchlist**: Save or remove movies from a custom database connected to a Node/Express backend.
@@ -30,7 +30,7 @@ A premium, full-featured Netflix Clone built with React, Node.js/Express, Sequel
 ## 📂 Project Structure
 
 ```text
-netflix-clone/
+streamflix/
 ├── package.json         # Root package (runs frontend and backend concurrently)
 ├── frontend/            # React Client Application
 │   ├── package.json     # Client-side scripts and dependencies
@@ -97,7 +97,7 @@ Detailed deployment instructions for deploying this app:
    - **Build Command**: `npm run build`
    - **Output Directory**: `build`
 4. Add **Environment Variables** in Vercel settings:
-   - `REACT_APP_API_URL`: Your backend URL (e.g., `https://netflix-backend.onrender.com`)
+   - `REACT_APP_API_URL`: Your backend URL (e.g., `https://streamflix-backend.onrender.com`)
 5. Click **Deploy**.
 
 ---
@@ -108,7 +108,7 @@ Detailed deployment instructions for deploying this app:
 1. Go to [Render](https://render.com/) and create a new **Web Service**.
 2. Connect your GitHub repository.
 3. In the Web Service configuration settings:
-   - **Name**: `netflix-clone-backend`
+   - **Name**: `streamflix-backend`
    - **Language**: `Node`
    - **Root Directory**: `backend`
    - **Build Command**: `npm install`

@@ -10,7 +10,7 @@ function Home() {
       <Banner />
       <Row 
         title="STREAMFLIX ORIGINALS" 
-        fetchUrl="/api/movies?category=netflixOriginals" 
+        fetchUrl="/api/movies?category=streamflixOriginals" 
         isLargeRow 
       />
       <Row title="Trending Now" fetchUrl="/api/movies?category=trending" />

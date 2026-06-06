@@ -9,7 +9,7 @@ app.use(cors());
 
 // Basic Route
 app.get('/', (req, res) => {
-  res.send('Netflix Clone Backend Running');
+  res.send('StreamFlix Backend Running');
 });
 
 // Connect to DB
